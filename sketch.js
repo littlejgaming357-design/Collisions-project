@@ -4,6 +4,7 @@
 
 let particleA;
 let particleB;
+var paused = false
 
 function setup() {
   createCanvas(640, 360);
@@ -12,6 +13,11 @@ function setup() {
 }
 
 function draw() {
+
+  if (paused) {
+      
+  
+  }
   background(255);
 
   particleA.collide(particleB);
@@ -36,3 +42,14 @@ function draw() {
 
 
 }
+
+function keyPressed() {
+  if (key === 'p') {
+    // Code to run.
+  }
+}
+
+
+
+
+
