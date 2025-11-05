@@ -4,14 +4,12 @@
 
 let particleA;
 let particleB;
-let particleD;
 var paused = false
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
   particleA = new Particle(320, 60);
   particleB = new Particle(320, 300);
-  particleD = new Paricle(320, 200)
 }
 
 function draw() {
@@ -29,20 +27,15 @@ function draw() {
   background(240);
 
   particleA.collide(particleB);
-  particleD.collide(particleB);
-  particleD.collide(particleA);
 
   particleA.update();
   particleB.update();
-  particleD.update();
 
   particleA.edges();
   particleB.edges();
-  particleD.edges();
 
   particleA.show();
   particleB.show();
-  particleD.show();
 
   // let speedA = particleA.velocity.mag();
   // let speedB = particleB.velocity.mag();
