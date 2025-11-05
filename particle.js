@@ -82,10 +82,14 @@ class Particle {
   }
 
   // Method to display
+  let r = random(255)
+  let g = random(255)
+  let b = random(255)
+  
   show() {
     stroke(0);
     strokeWeight(2);
-    fill(127);
+    fill(r, g, b);
     circle(this.position.x, this.position.y, this.r * 2);
   }
 }
