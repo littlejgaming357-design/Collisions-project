@@ -68,6 +68,10 @@ function keyPressed() {
   }
 }
 
+function mouseClicked() {
+  i *= 2
+  }
+
 
 
 
