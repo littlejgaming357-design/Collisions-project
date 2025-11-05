@@ -82,11 +82,12 @@ class Particle {
   }
 
   // Method to display
-  let r = random(255)
-  let g = random(255)
-  let b = random(255)
   
   show() {
+    let r = random(255)
+    let g = random(255)
+    let b = random(255)
+    
     stroke(0);
     strokeWeight(2);
     fill(r, g, b);
