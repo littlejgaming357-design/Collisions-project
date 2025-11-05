@@ -16,8 +16,7 @@ function draw() {
 
   if (paused) {
       
-  
-  }
+  } else {
   background(255);
 
   particleA.collide(particleB);
@@ -40,12 +39,16 @@ function draw() {
   
   
 
-
+  }
 }
 
 function keyPressed() {
   if (key === 'p') {
-    // Code to run.
+    if (paused === false) {
+      paused = true;
+    } else {
+      paused = false
+    }
   }
 }
 
