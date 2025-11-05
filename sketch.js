@@ -16,7 +16,6 @@ function draw() {
 
   if (paused) {
     push();
-    background('grey') 
     textSize(32);
     textAlign(CENTER, CENTER);
     fill('blue');
