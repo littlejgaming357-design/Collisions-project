@@ -37,7 +37,7 @@ function draw() {
       particleA.collide(particleB); 
     }
   }
-  for (let particles of particles) {
+  for (let particle of particles) {
   particle.update();
   particle.edges();
   particle.show();
