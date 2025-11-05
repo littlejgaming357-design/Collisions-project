@@ -7,7 +7,7 @@ var paused = false
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  for (let i = 0; i < 500; i++){
+  for (let i = 0; i < 10; i++){
     let x = random(width)
     let y = random(height)
     particles.push(new Particle(x,y))
