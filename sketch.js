@@ -29,6 +29,8 @@ function draw() {
   background(240);
 
   particleA.collide(particleB);
+  particleD.collide(particleB);
+  particleD.collide(particleA);
 
   particleA.update();
   particleB.update();
