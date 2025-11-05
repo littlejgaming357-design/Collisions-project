@@ -24,7 +24,7 @@ function draw() {
     text('PAUSED', width/2, height/2)
     pop();
   } else {
-  background(240);
+  background(100);
 
   particleA.collide(particleB);
 
