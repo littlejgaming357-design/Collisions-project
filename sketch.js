@@ -21,7 +21,7 @@ function draw() {
     fill('blue');
     text ('PAUSED', width/2 + 2, height/2 +2)
     fill('dark red');
-    text('PAUSED', width/2, height,2)
+    text('PAUSED', width/2, height/2)
     pop();
   } else {
   background(255);
