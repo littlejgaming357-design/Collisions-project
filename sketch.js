@@ -20,7 +20,7 @@ function draw() {
     textAlign(CENTER, CENTER);
     fill('blue');
     text ('PAUSED', width/2 + 2, height/2 +2)
-    fill('dark red');
+    fill('rgb(129, 6, 6)');
     text('PAUSED', width/2, height/2)
     pop();
   } else {
