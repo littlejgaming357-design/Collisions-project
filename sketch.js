@@ -7,7 +7,7 @@ let particleB;
 var paused = false
 
 function setup() {
-  createCanvas(640, 360);
+  createCanvas(windowWidth, windowHeight);
   particleA = new Particle(320, 60);
   particleB = new Particle(320, 300);
 }
@@ -24,7 +24,7 @@ function draw() {
     text('PAUSED', width/2, height/2)
     pop();
   } else {
-  background(255);
+  background(240);
 
   particleA.collide(particleB);
 
@@ -47,6 +47,10 @@ function draw() {
   
 
   }
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
 }
 
 function keyPressed() {
