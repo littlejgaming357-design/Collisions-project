@@ -2,14 +2,16 @@
 // Daniel Shiffman
 // http://natureofcode.com
 
-let particleA;
-let particleB;
+let particles = [];
 var paused = false
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  particleA = new Particle(320, 60);
-  particleB = new Particle(320, 300);
+  for (let i = 0; i < 10; i++){
+    let x = random(width)
+    let y = random(height)
+    particles.push(new Particle(x,y))
+  }
 }
 
 function draw() {
@@ -26,17 +28,20 @@ function draw() {
   } else {
   background(240);
 
-  particleA.collide(particleB);
+  //particleA.collide(particleB);
 
-  particleA.update();
-  particleB.update();
-
-  particleA.edges();
-  particleB.edges();
-
-  particleA.show();
-  particleB.show();
-
+  for (let i = 0; i < particles.length; i++){
+    let particleA = particles[i];
+    for (let j = i + 1; j < particles.length; j++){
+      particleB = particles[j]
+      particleA.collide(particleB); 
+    }
+  }
+  for (let particles of particles) {
+  particle.update();
+  particle.edges();
+  particle.show();
+  }
   // let speedA = particleA.velocity.mag();
   // let speedB = particleB.velocity.mag();
   // let kinA = 0.5 * particleA.mass * speedA * speedA;
