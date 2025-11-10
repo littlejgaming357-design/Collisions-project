@@ -17,14 +17,8 @@ function setup() {
 function draw() {
 
   if (paused) {
-    push();
-    textSize(32);
-    textAlign(CENTER, CENTER);
-    fill('blue');
-    text ('PAUSED', width/2 + 2, height/2 +2)
-    fill('rgb(129, 6, 6)');
-    text('PAUSED', width/2, height/2)
-    pop();
+    //draw paused stuff
+    drawPausedScreen;
   } else {
   background(0, 100, 0);
 
@@ -52,6 +46,36 @@ function draw() {
   
 
   }
+}
+
+function drawPausedScreen{
+
+  let resCY = height / 2 + 50
+
+  push();
+  textSize(32);
+  textAlign(CENTER, CENTER);
+  fill('blue');
+  text ('PAUSED', width/2 + 2, height/2 +2)
+  fill('rgb(129, 6, 6)');
+  text('PAUSED', width/2, height/2)
+  pop();
+
+  push();
+  rectMode(CENTER);
+  fill('gray');
+  rect(width / 2, resCY, 100, 25);
+  pop();
+
+  push();
+  textAlign(width / 2, resCY);
+  fill(0);
+  textSize(20)
+  textStyle(BOLD)
+  text('RESUME', 
+  )
+  pop();
+
 }
 
 function windowResized() {
