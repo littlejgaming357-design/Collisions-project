@@ -60,11 +60,7 @@ function windowResized() {
 
 function keyPressed() {
   if (key === 'p') {
-    if (paused === false) {
-      paused = true;
-    } else {
-      paused = false
-    }
+    paused = !paused;
   }
 }
 
