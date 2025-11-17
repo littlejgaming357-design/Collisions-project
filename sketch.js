@@ -18,7 +18,7 @@ function draw() {
 
   if (paused) {
     //draw paused stuff
-    drawPausedScreen;
+    drawPausedScreen();
   } else {
   background(0, 100, 0);
 
@@ -56,9 +56,9 @@ function drawPausedScreen() {
   textSize(32);
   textAlign(CENTER, CENTER);
   fill('blue');
-  text ('PAUSED', width/2 + 2, height/2 +2)
+  text ('PAUSED', width/2 + 2, height/2 +2);
   fill('rgb(129, 6, 6)');
-  text('PAUSED', width/2, height/2)
+  text('PAUSED', width/2, height/2);
   pop();
 
   push();
@@ -70,9 +70,9 @@ function drawPausedScreen() {
   push();
   textAlign(width / 2, resCY);
   fill(0);
-  textSize(20)
-  textStyle(BOLD)
-  text('RESUME')
+  textSize(20);
+  textStyle(BOLD);
+  text('RESUME');
   pop();
 
 }
