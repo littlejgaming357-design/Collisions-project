@@ -72,8 +72,7 @@ function drawPausedScreen{
   fill(0);
   textSize(20)
   textStyle(BOLD)
-  text('RESUME', 
-  )
+  text('RESUME')
   pop();
 
 }
