@@ -88,6 +88,9 @@ function keyPressed() {
 }
 
 function mousePressed() {
+
+  let resCY = height / 2 + 50
+  
   if(mouseX >= width/2 - 50 &&
      mouseY >= resCY - 14.5 &&
      mouseX <= width/2 + 50 &&
