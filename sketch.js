@@ -48,7 +48,7 @@ function draw() {
   }
 }
 
-function drawPausedScreen{
+function drawPausedScreen() {
 
   let resCY = height / 2 + 50
 
