@@ -68,11 +68,11 @@ function drawPausedScreen() {
   pop();
 
   push();
-  textAlign(width / 2, resCY);
+  textAlign(CENTER);
   fill(0);
   textSize(20);
   textStyle(BOLD);
-  text('RESUME');
+  text('RESUME', width/2, resCY);
   pop();
 
 }
