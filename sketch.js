@@ -50,10 +50,10 @@ function draw() {
 
 function drawPausedScreen() {
 
-  let resCY = height / 2 + 50
+  let resCY = height / 2 + 130
 
   push();
-  textSize(32);
+  textSize(100);
   textAlign(CENTER, CENTER);
   fill('blue');
   text ('PAUSED', width/2 + 2, height/2 +2);
