@@ -64,13 +64,13 @@ function drawPausedScreen() {
   push();
   rectMode(CENTER);
   fill('gray');
-  rect(width / 2, resCY, 100, 25);
+  rect(width / 2, resCY, 400, 100);
   pop();
 
   push();
   textAlign(CENTER);
   fill(139, 0, 0);
-  textSize(20);
+  textSize(80);
   textStyle(BOLD);
   text('RESUME', width/2, resCY + 6);
   pop();
@@ -91,10 +91,10 @@ function mousePressed() {
 
   let resCY = height / 2 + 130
   
-  if(mouseX >= width/2 - 50 &&
-     mouseY >= resCY - 14.5 &&
-     mouseX <= width/2 + 50 &&
-     mouseY <= resCY + 14.5
+  if(mouseX >= width/2 - 200 &&
+     mouseY >= resCY - 50 &&
+     mouseX <= width/2 + 200 &&
+     mouseY <= resCY + 50
   ) {
     paused = false;
   }
