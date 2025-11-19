@@ -3,7 +3,7 @@
 // http://natureofcode.com
 
 let particles = [];
-var paused = false
+var paused = false;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
