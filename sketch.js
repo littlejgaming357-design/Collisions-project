@@ -96,7 +96,7 @@ function mousePressed() {
      mouseX <= width/2 + 50 &&
      mouseY <= resCY + 14.5
   ) {
-    paused = !paused;
+    paused = false;
   }
 }
 
