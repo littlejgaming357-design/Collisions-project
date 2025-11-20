@@ -53,7 +53,7 @@ function drawPausedScreen() {
   let resCY = height / 2 + 130
 
   push();
-  textSize(100);
+  textSize(130);
   textAlign(CENTER, CENTER);
   fill('blue');
   textFont('Courier New')
@@ -71,7 +71,8 @@ function drawPausedScreen() {
   push();
   textAlign(CENTER);
   fill(139, 0, 0);
-  textSize(80);
+  textSize(100);
+  textFont('Courier New')
   textStyle(BOLD);
   text('RESUME', width/2, resCY + 25);
   pop();
