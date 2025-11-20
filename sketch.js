@@ -56,6 +56,7 @@ function drawPausedScreen() {
   textSize(100);
   textAlign(CENTER, CENTER);
   fill('blue');
+  textFont('Courier New')
   text ('PAUSED', width/2 + 2, height/2 +2);
   fill('rgb(129, 6, 6)');
   text('PAUSED', width/2, height/2);
