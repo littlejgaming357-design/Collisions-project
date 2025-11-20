@@ -105,7 +105,7 @@ function mousePressed() {
 function mousePressed() {
 
   if(paused = false){
-    let particles *= 2
+    let particles = particles.mult(2)
   }
 }
 
