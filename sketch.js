@@ -105,7 +105,7 @@ function mousePressed() {
 function mousePressed() {
 
   if(paused = false){
-    for (let i = 0; i < 50; i++){
+    for (let i = 0; i < i * 2; i++){
     let x = random(width)
     let y = random(height)
     particles.push(new Particle(x,y))
