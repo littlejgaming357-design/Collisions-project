@@ -51,6 +51,7 @@ function draw() {
 
 function drawPausedScreen() {
 
+  let redCY = height/2 + 280
   let resCY = height / 2 + 130
 
   push();
