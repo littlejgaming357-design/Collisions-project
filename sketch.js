@@ -7,7 +7,7 @@ var paused = false;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  background(0, 100, 0);
+  changeBackgroundColor(0, 100, 0);
   for (let i = 0; i < 50; i++){
     let x = random(width)
     let y = random(height)
@@ -96,7 +96,9 @@ function changeBackgroundColor() {
 }
 
 function mousePressed() {
-
+  let r = random(255);
+  let g = random(255);
+  let b = random(255);
   let resCY = height / 2 + 130
   let redCY = height/2 + 280
   
