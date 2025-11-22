@@ -7,6 +7,7 @@ var paused = false;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
+  background(0, 100, 0;
   for (let i = 0; i < 50; i++){
     let x = random(width)
     let y = random(height)
@@ -20,7 +21,7 @@ function draw() {
     //draw paused stuff
     drawPausedScreen();
   } else {
-  background(0, 100, 0);
+  background(backgroundColor);
 
   //particleA.collide(particleB);
 
@@ -41,7 +42,7 @@ function draw() {
   // let kinA = 0.5 * particleA.mass * speedA * speedA;
   // let kinB = 0.5 * particleB.mass * speedB * speedB;
   // console.log(kinA + kinB);
-  
+  backGroundButton()
   
   
 
@@ -89,6 +90,11 @@ function keyPressed() {
   }
 }
 
+function changeBackgroundColor() {
+  // Example: Change to a random color
+  backgroundColor = color(random(255), random(255), random(255));
+}
+
 function mousePressed() {
 
   let resCY = height / 2 + 130
@@ -99,8 +105,42 @@ function mousePressed() {
      mouseY <= resCY + 50
   ) {
     paused = false;
+  } else {
+  
+  if(mouseX >= width/2 - 300 &&
+     mouseY >= redCY - 50 &&
+     mouseX <= width/2 + 300 &&
+     mouseY <= redCY + 50) {
+    changeBackgroundColor(r, g, b);
+  }
   }
 }
+
+function backGroundButton() {
+  
+  let redCY = height/2 + 280
+  
+  push();
+  rectMode(CENTER)
+  fill(25, 255, 255)
+  rect(width / 2, redCY , 600, 100);
+  pop();
+  
+  push();
+  textSize(43);
+  textAlign(CENTER, CENTER);
+  textStyle(BOLD);
+  fill('blue');
+  textFont('Courier New')
+  text ('Change Background Color', width/2 + 2, height/2 + 280 +2);
+  fill('rgb(129, 6, 6)');
+  text('Change Background Color', width/2, height/2 + 280);
+  pop();
+  
+}
+
+
+
 
 
 
