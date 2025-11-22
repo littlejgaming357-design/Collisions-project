@@ -51,7 +51,6 @@ function draw() {
 
 function drawPausedScreen() {
 
-  let redCY = height/2 + 280
   let resCY = height / 2 + 130
 
   push();
@@ -99,6 +98,7 @@ function changeBackgroundColor() {
 function mousePressed() {
 
   let resCY = height / 2 + 130
+  let redCY = height/2 + 280
   
   if(mouseX >= width/2 - 200 &&
      mouseY >= resCY - 50 &&
