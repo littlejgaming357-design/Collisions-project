@@ -115,6 +115,8 @@ function mousePressed() {
      mouseX <= width/2 + 300 &&
      mouseY <= redCY + 50) {
     changeBackgroundColor(r, g, b);
+  } else {
+    particles.push(new Particle(mouseX, mouseY);
   }
   }
 }
